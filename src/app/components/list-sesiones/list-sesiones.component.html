@@ -1,0 +1,65 @@
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <span class="h3">Sesiones</span>
+      <button
+        class="btn bg-dark-red btn-dark btn-lg float-end"
+        routerLink="/createSesion"
+      >
+        Agregar
+      </button>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Appellido</th>
+            <th scope="col">Personas</th>
+            <th scope="col">Editar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Appellido</th>
+            <th scope="col">Personas</th>
+            <th>
+              <i class="fas fa-edit fa-lg mx-2 text-info"></i>
+              <i class="fas fa-trash fa-lg text-danger"></i>
+            </th>
+          </tr>
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Appellido</th>
+            <th scope="col">Personas</th>
+            <th>
+              <i class="fas fa-edit fa-lg mx-2 text-info"></i>
+              <i class="fas fa-trash fa-lg text-danger"></i>
+            </th>
+          </tr>
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Appellido</th>
+            <th scope="col">Personas</th>
+            <th>
+              <i class="fas fa-edit fa-lg mx-2 text-info"></i>
+              <i class="fas fa-trash fa-lg text-danger"></i>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li *ngFor="let item of items | async">
+          {{ item | json }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

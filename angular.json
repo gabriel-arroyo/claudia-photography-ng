@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "claudia-photography-ng:build:production",
+            "firebaseProject": "claudia-oropeza-photography",
+            "firebaseHostingSite": "claudiaphotography"
+          }
         }
       }
     }

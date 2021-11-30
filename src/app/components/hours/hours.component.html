@@ -1,0 +1,19 @@
+<!-- <table>
+  <tr *ngFor="let item of lista">
+    <th class="text-center">{{item}}</th>
+  </tr>
+ 
+</table> -->
+
+<table class="hour-table">
+  <tbody>
+    <tr *ngFor="let hour of hoursList">
+      <td class="hour-button">
+        <app-session-button
+          [name]="'Juan Perez'"
+          [hour]="hour"
+        ></app-session-button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,75 @@
+<div class="container pt-4">
+  <div class="row">
+    <div class="">
+      <div class="card text-center"><app-agenda></app-agenda></div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h3>Agregar Sesión</h3>
+          <span class="badge bg-danger"
+            >Solo el campo de nombre es obligatorio</span
+          >
+          <br />
+          <br />
+
+          <form
+            class="mt-4 p-2"
+            [formGroup]="createSesion"
+            (ngSubmit)="addSesion()"
+          >
+            <div class="row">
+              <div class="col ps-0">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  formControlName="nombre"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="col pe-0">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  formControlName="apellido"
+                  placeholder="Apellido"
+                />
+              </div>
+              <input
+                type="text"
+                class="form-control form-control-lg mt-3"
+                formControlName="telefono"
+                placeholder="Teléfono"
+              />
+              <input
+                type="text"
+                class="form-control form-control-lg mt-3"
+                formControlName="email"
+                placeholder="Email"
+              />
+              <input
+                type="text"
+                class="form-control form-control-lg mt-3 mb-3"
+                formControlName="personas"
+                placeholder="Número de personas"
+              />
+              <div>
+                <button
+                  type="text"
+                  class="btn btn-secondary btn-lg me-3"
+                  [routerLink]="['/list-sesiones']"
+                  routerLinkActive="router-link-active"
+                >
+                  Volver
+                </button>
+                <button type="submit" class="btn btn-dark btn-lg">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,35 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 /* You can add global styles to this file, and also import other style files */
+body {
+  background: #f00000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dc281e,
+    #f00000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dc281e,
+    #f00000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-dark-red {
+  background: #a10000;
+}
+
+.bg-dark-red:hover {
+  background: #530101;
+}
+
+.bg-dark-red:focus {
+  background: #530101;
+}
+
+.bg-card {
+  background: #c76a6a;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

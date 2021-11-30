@@ -1,0 +1,16 @@
+<div class="calendar">
+  <div class="calendar-title"><span>17</span><span>MAR 2019</span></div>
+  <div class="week scrollmenu">
+    <div
+      style="display: inline-block"
+      *ngFor="let item of monthDays | keyvalue"
+      [class.target]="item.key === 21"
+    >
+      <app-day
+        class="day"
+        [dayname]="item.value"
+        [daynumber]="item.key"
+      ></app-day>
+    </div>
+  </div>
+</div>

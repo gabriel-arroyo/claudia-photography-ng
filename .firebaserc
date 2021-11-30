@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "claudia-oropeza-photography": {
+      "hosting": {
+        "claudia-photography-ng": [
+          "claudiaphotography"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "claudia-oropeza-photography"
+  }
+}
